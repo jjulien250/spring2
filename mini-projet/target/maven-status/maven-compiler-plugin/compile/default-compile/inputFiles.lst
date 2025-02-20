@@ -1,0 +1,14 @@
+C:\Users\jjuli\workspace\mini-projet3\mini-projet\src\main\java\com\example\Application.java
+C:\Users\jjuli\workspace\mini-projet3\mini-projet\src\main\java\com\example\aspects\LoggingAspect.java
+C:\Users\jjuli\workspace\mini-projet3\mini-projet\src\main\java\com\example\config\SecurityConfig.java
+C:\Users\jjuli\workspace\mini-projet3\mini-projet\src\main\java\com\example\controllers\AdminController.java
+C:\Users\jjuli\workspace\mini-projet3\mini-projet\src\main\java\com\example\controllers\AuthController.java
+C:\Users\jjuli\workspace\mini-projet3\mini-projet\src\main\java\com\example\controllers\ExpenseController.java
+C:\Users\jjuli\workspace\mini-projet3\mini-projet\src\main\java\com\example\controllers\HomeController.java
+C:\Users\jjuli\workspace\mini-projet3\mini-projet\src\main\java\com\example\models\Expense.java
+C:\Users\jjuli\workspace\mini-projet3\mini-projet\src\main\java\com\example\models\User.java
+C:\Users\jjuli\workspace\mini-projet3\mini-projet\src\main\java\com\example\repositories\ExpenseRepository.java
+C:\Users\jjuli\workspace\mini-projet3\mini-projet\src\main\java\com\example\repositories\UserRepository.java
+C:\Users\jjuli\workspace\mini-projet3\mini-projet\src\main\java\com\example\services\CustomUserDetails.java
+C:\Users\jjuli\workspace\mini-projet3\mini-projet\src\main\java\com\example\services\CustomUserDetailsService.java
+C:\Users\jjuli\workspace\mini-projet3\mini-projet\src\main\java\com\example\services\ExpenseService.java

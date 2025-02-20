@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="fr" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" type="text/css" th:href="@{/css/styles.css}">
+</head>
+<body class="home-page">
+    <h2>Bienvenue sur la page d'accueil</h2>
+    <p>Vous pouvez vous connecter ou créer un compte.</p>
+
+    <a href="/login"><button>Se connecter</button></a>
+    <a href="/register"><button>S'inscrire</button></a>
+
+    <p>Si vous êtes déjà connecté, vous pouvez <a href="/logout">vous déconnecter</a>.</p>
+</body>
+</html>

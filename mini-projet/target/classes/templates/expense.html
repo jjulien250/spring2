@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Expense</title>
+    <link rel="stylesheet" type="text/css" th:href="@{/css/styles.css}">
+</head>
+<body>
+    <h2>Bienvenue sur la page des dépenses</h2>
+    <a href="/logout">Logout</a>
+
+    <h2>Déclarer une dépense</h2>
+    <form action="/expense" method="post">
+        <h3>Description de la formation</h3>
+        <label>Description :</label>
+        <input type="text" name="description" required>
+        <br>
+        <label>Date de formation :</label>
+        <input type="date" name="dateFormation">
+        <br>
+        <label>Lieu de formation :</label>
+        <input type="text" name="lieuFormation">
+        <br>
+        <label>Intitulé de formation :</label>
+        <input type="text" name="intituleFormation">
+        <br>
+
+        <h3>Frais de transport</h3>
+        <label>Train :</label>
+        <input type="number" name="fraisTransportTrain" step="0.01">
+        <br>
+        <label>Avion :</label>
+        <input type="number" name="fraisTransportAvion" step="0.01">
+        <br>
+        <label>Bus :</label>
+        <input type="number" name="fraisTransportBus" step="0.01">
+        <br>
+        <label>Voiture :</label>
+        <input type="number" name="fraisTransportVoiture" step="0.01">
+        <br>
+
+        <h3>Frais d'hébergement</h3>
+        <label>Hôtel :</label>
+        <input type="number" name="fraisHebergementHotel" step="0.01">
+        <br>
+        <label>Airbnb :</label>
+        <input type="number" name="fraisHebergementAirbnb" step="0.01">
+        <br>
+
+        <h3>Frais de restauration</h3>
+        <label>Frais de restauration :</label>
+        <input type="number" name="fraisRestauration" step="0.01">
+        <br>
+
+        <button type="submit">Soumettre</button>
+    </form>
+
+    <h3>Vos Déclarations</h3>
+    <ul>
+        <li th:each="expense : ${expenses}">
+            <span th:text="${expense.description}"></span> - 
+            <span th:text="${expense.status}"></span>
+        </li>
+    </ul>
+
+</body>
+</html>

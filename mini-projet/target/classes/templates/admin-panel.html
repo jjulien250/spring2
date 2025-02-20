@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Admin Panel</title>
+    <link rel="stylesheet" type="text/css" th:href="@{/css/styles.css}">
+</head>
+<body class="admin-panel">
+    <h1>Welcome to the Admin Panel</h1>
+    <p>You are successfully logged in!</p>
+    <a href="/logout">Logout</a>
+
+    <h2>Panel Admin - Gestion des Dépenses</h2>
+    <ul>
+        <li th:each="expense : ${expenses}">
+            <span th:text="${expense.description}"></span> - 
+            <span th:text="${expense.status}"></span>
+            <form th:action="@{/admin-panel/validate/{id}(id=${expense.id})}" method="post">
+                <button type="submit">Valider</button>
+            </form>
+            <form th:action="@{/admin-panel/invalidate/{id}(id=${expense.id})}" method="post">
+                <button type="submit">Invalider</button>
+            </form>
+        </li>
+    </ul>
+</body>
+</html>
